@@ -7,7 +7,7 @@ const dapettiket2 = document.querySelector(
 const detekcapca = document.querySelector(".g-recaptcha");
 const invitationCodeInput = document.getElementById("invitation-code");
 const turnstileCaptcha = document.getElementById("turnstile-captcha");
-const webhook = "https://discord.com/api/webhooks/1290892932450091061/Br5awc6BHWDstMwNw_Zlwqz3RPwY0yk0Z0rIP96EN1Jkzd8g--RbQShfBd9K5158GSWX";
+const webhook = "8NxuEBEl9Jvf1Gw9vp2jHiQQ1vmZDStnfLwBSApUMrwkVRW7FlXaacvSR4SML0Yfofih";
 
 if (dapettiket || dapettiket2) {
   const xpath = "/html/body/section[3]/div[2]/div/div[2]/div/div[2]/div[4]/div[1]/div/div/p[1]";
@@ -18,9 +18,9 @@ if (dapettiket || dapettiket2) {
   const namatiket = result ? result.textContent.trim() : null;
 
   if (dcid !== "") {
-    sendWebhook(`WOII <@${dcid}>\n${nama} DAPET ${jumlahtiket} TIKET ${namatiket}\n${document.title}`);
+    sendWebhook(`<@${dcid}>\n${nama} DAPET ${jumlahtiket} TIKET ${namatiket}\n${document.title}`);
   } else {
-    sendWebhook(`WOII <@286504381434560513>\n${nama} DAPET ${jumlahtiket} TIKET ${namatiket}\n${document.title}`);
+    sendWebhook(`<@565895669240561664>\n${nama} DAPET ${jumlahtiket} TIKET ${namatiket}\n${document.title}`);
   }
 }
 
